@@ -83,8 +83,8 @@ for i in df["Netto"]:
 df.drop(columns=["Brutto","Netto","Faktura VAT"], inplace = True)
 
 
-#wstepny export wyczyszczonego zbioru
-df.to_csv("otomoto_clean.csv",sep = ',',
+#export cleaned dataset
+df.to_csv("data/otomoto_clean.csv",sep = ',',
 	    index = False, header = True)
 
 
